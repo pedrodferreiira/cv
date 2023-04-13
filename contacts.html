@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+ 	<head>
+		<meta charset="UTF-8"/>
+		<title>Contact Me</title>
+	</head>
+	<body>
+		<h1>The way to reach me.</h1>
+		<p><a href="malito:pedrodferreiira@gmail.com">Email Me</a></p>
+		<p><a href="tel:+351 910578908">Call Me</a></p>
+		<!-- para identificarmos que a hiperligação servirá para enviar um email ou efetuar uma chamada, usa-se o malito: e o tel:, respetivamente, dentro do atributo href, como exemplificado acima.-->
+		<form method="post" action="">
+		<!-- Existem bastantes diferentes inputs, e segundo a formadora, este elemento é bastante utilizado em várias situações, o que faz sentido uma vez que se olha para os inputs e o que se consegue fazer com eles. Todo o elemento form pode ou não ter um outro elemento label, mas tem obrigatoriamente que ter pelo menos um input, isto para fazer sentido termos escolhido um form.-->
+			<label>Your name:</label>
+			<!-- Isto é o texto que aparecerá na tela.-->
+			<input type="text" name="" value="" />
+			<input type="submit"/>
+			<!-- Existem diferentes tipo de input como já o disse antes. Eu tenho um ficheiro html só com inputs. -->
+		</form>
+		
+		<hr />
+		
+		<form method="post" action="malito:pedrodferreiira@gmail.com" enctype="text/plain">
+			<!-- o atributo action faz com que escolhamos para onde o visitante é direccionado, por exemplo, se eu colocasse ali dentro um 'index.html' o visitante seria redireccionado para a nossa página inicial, como eu coloquei ali um mailto, isso significa que o mesmo será redireccionado para a aplicação de email que o mesmo possui, pronto para enviar. O atributo enctype apenas faz com que escolhamos o formato de texto e como ele aparecerá, neste caso 'text/plain', ou seja, em texto simples. -->
+			<label>Your name:</label>
+			<input type="text" name="YourName" value="" />
+			<br />
+			<label>Your email:</label>
+			<input type="email" name="YourEmail" value="" />
+			<!-- Nós poderiamos colocar aqui um elemento input com um atributo type="text", mas o motivo de nós colocarmos já o atributo type="email" é porque dessa forma o próprio site já faz um processo de filtração na qual se o que o visitante escrever algo, por exemplo, sem um @ o mesmo não deixa seguir, isto porque estamos a pedir um email e não existe nenhum email sem @.-->
+			<br />
+			<label>Your message:</label>
+			<br />
+			<textarea name="YourMessage" rows="10" cols="30"></textarea>
+			<br />
+			<input type="submit" name=""/>
+		</form>
+		
+	</body>
+</html>

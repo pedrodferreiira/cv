@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- declara em que versão do html estamos a escrever, sendo que a última versão existente é a quinta (html5), e esta declaração (!DOCTYPE) refere-se a essa mesma quinta versão. -->
+ 
+<html lang="en" >
+ <!-- este atributo lang="en" não é muito importante para quem está a visualizar visualmente o nosso site mas é muito importante para quem o acede através de outros métodos, como por exemplo um pessoa invisual que consome o conteúdo do nosso site utilizando métodos de acessibilidade presentes no dispositivo. com esta linha de código, apenas estamos a indicar ao computador em que língua está o conteúdo do site. -->
+ 	
+ 	<head>
+		
+		<meta charset="UTF-8"/>
+		<!-- indicamos qual o range de caracteres que são possiveis o site apresentar. o UTF-8 é o padrão, e aparentemente, suficiente. -->
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<!-- isto serve para o nosso site ser bem apresentado e compativel com o browser internet explorer, mas como o mesmo já não é utilizado (e acho que até já nem é suportado), esta linha de código já não interessa. -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- simplesmente indica como é que o nosso site deve ser mostrado quando o acedemos, tendo em conta o tamanho do ecrã em que está a ser aberto. ainda não sei qual a importância disto -->
+		
+		<title>Pedro Ferreira</title>
+		<!-- o título que aparece no marcador do browser.  -->
+		
+	</head>
+	
+	<body>
+		<table cellspacing="20">
+			<tr>
+				<td>	
+					<img src="Images/perfil.jpg" alt="Fotografia de Perfil" height="300px"/>
+					<!-- Existem bastantes atributos para o elemento img. O único obrigatório é o src que significa source e descreve o caminho que o browser percorre para ir buscar a nossa imagem, caminho esse que pode ser local ou descrito através de uma url. O atributo alt não é obrigatório mas é extremamente importante.. pois ele descreve a imagem através das nossas palavras, caso o browser, por qualquer motivo, não esteja a conseguir carregar a imagem que seleccionamos. Como disse, existem vários outros atributos, eu neste exemplo estou a utilizar mais um, que é o height, que me faz definir a altura que a imagem tem, isto porque como a imagem que seleccionei tem muita resoluçaão, estava a ocupar muito espaço na tela e então eu reduzi; não necessitei de especificar a largura porque automaticamente ela se mantém proporcional.-->
+				</td>
+				<td>
+					<h1>Pedro Ferreira </h1>
+		
+					<p><em><strong>Level 1</strong> Front End Developer</em></p>
+					<!-- embora haja duas maneiras para colocar um texto em itálico(em ou i) ou um texto em negrito (strong ou b), deve-se sempre utilizar o primeiro (em e strong) pois não só o destaca visualmente mas também dá mais ênfase embora visualmente nada mude. -->
+		
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Metus aliquam eleifend mi in nulla posuere.</p>
+				</td>
+			</tr>
+		</table>
+		
+		<hr />
+		
+		<h3>Education</h3>
+		
+		<ul>
+		<!-- ul é uma sigla para un-ordered list, que por default usa uma lista de pontos.  -->
+			
+			<li>Pharetra convallis posuere morbi leo</li>
+			
+			<li>Sem nulla pharetra diam sit</li>
+			
+			<li>Purus semper eget duis at</li>
+			
+		</ul >
+		
+		<hr />
+		
+		<h3>Work Experience</h3>
+		
+		<table cellspacing="10">
+			<thead>
+				<tr>
+					<th>Dates</th>
+					<th>Work</th>
+				</tr>
+			</thead>
+		
+			<tbody>
+				<tr>
+					<td>2020</td>
+					<td>Vestibulum mattis ullamcorper velit sed</td>
+				</tr>
+				<tr>
+					<td>2022</td>
+					<td>Id consectetur purus ut faucibus</td>
+				</tr>
+			</tbody>
+		
+			<tfoot>
+			
+			</tfoot>
+			
+		</table>
+		
+		<hr />
+		
+		<h3>Skills</h3>
+		
+			<table cellspacing="10">
+				<tr>
+					<td>Lacus</td>
+					<td>💀💀💀</td>
+				</tr>
+				<tr>
+					<td>Nunc</td>
+					<td>💀💀</td>
+				</tr>
+				<tr>
+					<td>Sed</td>
+					<td>💀💀💀💀</td>
+				</tr>
+			</table>
+		
+		<hr />
+		
+		<h3><a href="hobbies.html">Hobbies</a></h3>
+		
+		<h3><a href="contacts.html">Contact Me</a></h3>
+		
+	</body>
+	
+ </html>
